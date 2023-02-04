@@ -10,7 +10,6 @@ const changeView = () => { headerView.value = !headerView.value }
 
 <template>
   <div class="container">
-    <button @click="changeView">{{ headerView? 'ocultar': 'mostrar' }}</button>
     <Header v-if="headerView" />
     <Content />
     <Footer />
